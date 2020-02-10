@@ -1,4 +1,4 @@
-// C++ Primer.cpp : 定义控制台应用程序的入口点。
+// C++ Primer.cpp : 露篓脪氓驴脴脰脝脤篓脫娄脫脙鲁脤脨貌碌脛脠毛驴脷碌茫隆拢
 //
 
 #include "stdafx.h"
@@ -29,10 +29,10 @@ int& ReturnRef()
 int main()
 {	
 
-	/*                           *******                     C++ 基础                     *******                       */
-	//对于指针和引用从右往左读会更加利于理解；
+	/*                           *******                     C++ 禄霉麓隆                     *******                       */
+	//露脭脫脷脰赂脮毛潞脥脪媒脫脙麓脫脫脪脥霉脳贸露脕禄谩赂眉录脫脌没脫脷脌铆陆芒拢禄
 	int **K=nullptr;
-	int  **&i = K; //i是一个int 类型引用的二级指针；
+	int  **&i = K; //i脢脟脪禄赂枚int 脌脿脨脥脪媒脫脙碌脛露镁录露脰赂脮毛拢禄
 	int j = 42;
 	int *h = &j;
 	K = &h;
@@ -40,47 +40,47 @@ int main()
 	std::cout << j << std::endl;
 	const double C_Double = 2.14;
 	double D_Double = 2.14;
-	//double &C_DOuble = C_Double; //错误,常量引用只能绑定在常量应用上；
+	//double &C_DOuble = C_Double; //麓铆脦贸,鲁拢脕驴脪媒脫脙脰禄脛脺掳贸露篓脭脷鲁拢脕驴脫娄脫脙脡脧拢禄
 	const double &CC_DOuble = C_Double; 
-	const double &C_DOuble = D_Double; //常量引用可以绑定在非常量变量上，但是不可以通过这个引用改变这个变量的值；
-	//double *P_Double = &C_Double;//错误,非常量指针不能指向常量；
+	const double &C_DOuble = D_Double; //鲁拢脕驴脪媒脫脙驴脡脪脭掳贸露篓脭脷路脟鲁拢脕驴卤盲脕驴脡脧拢卢碌芦脢脟虏禄驴脡脪脭脥篓鹿媒脮芒赂枚脪媒脫脙赂脛卤盲脮芒赂枚卤盲脕驴碌脛脰碌拢禄
+	//double *P_Double = &C_Double;//麓铆脦贸,路脟鲁拢脕驴脰赂脮毛虏禄脛脺脰赂脧貌鲁拢脕驴拢禄
 	const double *CP_Double = &C_Double;//
 
-	const double *P_Double = &D_Double;//指向常量的指针可以指向在非常量变量上，但是不可以通过这个指针改变这个变量的值
+	const double *P_Double = &D_Double;//脰赂脧貌鲁拢脕驴碌脛脰赂脮毛驴脡脪脭脰赂脧貌脭脷路脟鲁拢脕驴卤盲脕驴脡脧拢卢碌芦脢脟虏禄驴脡脪脭脥篓鹿媒脮芒赂枚脰赂脮毛赂脛卤盲脮芒赂枚卤盲脕驴碌脛脰碌
 
-	//*P_Double = 8; //错误，不能对const 修饰的变量赋值；
+	//*P_Double = 8; //麓铆脦贸拢卢虏禄脛脺露脭const 脨脼脢脦碌脛卤盲脕驴赂鲁脰碌拢禄
 
 	int Vaule = 90;
 
-	int *const CP_Vaule = &Vaule; //*在const前面代表是常量指针，必须初始化，而且初始化后他的地址就不能再改变了，顶层const;
+	int *const CP_Vaule = &Vaule; //*脭脷const脟掳脙忙麓煤卤铆脢脟鲁拢脕驴脰赂脮毛拢卢卤脴脨毛鲁玫脢录禄炉拢卢露酶脟脪鲁玫脢录禄炉潞贸脣没碌脛碌脴脰路戮脥虏禄脛脺脭脵赂脛卤盲脕脣拢卢露楼虏茫const;
 
 	const double  DC_Vaule = 2.13;
 
-	const double *PDC_Vaule = &DC_Vaule; //PDC_Vaule 是一个指向double常量的指针 底层const；  
+	const double *PDC_Vaule = &DC_Vaule; //PDC_Vaule 脢脟脪禄赂枚脰赂脧貌double鲁拢脕驴碌脛脰赂脮毛 碌脳虏茫const拢禄  
 
 	/**************************** Warining**************************
-					1：所有的常量类型必须要初始化
-					2：初始化是在定义时赋值；
+					1拢潞脣霉脫脨碌脛鲁拢脕驴脌脿脨脥卤脴脨毛脪陋鲁玫脢录禄炉
+					2拢潞鲁玫脢录禄炉脢脟脭脷露篓脪氓脢卤赂鲁脰碌拢禄
 
-					3：顶层const代表本身是常量类型，底层const是指向的类型为const;
+					3拢潞露楼虏茫const麓煤卤铆卤戮脡铆脢脟鲁拢脕驴脌脿脨脥拢卢碌脳虏茫const脢脟脰赂脧貌碌脛脌脿脨脥脦陋const;
 	****************************    **************************/
 
 	auto item = 1 + 3;
 
 	const auto  i_atuo = 42;
-	auto  j_auto = i_atuo;//j_auto是int类型常量
-	const auto &k = i_atuo;// k是  int 类型常量的引用  
-	auto *p = &i_atuo; // p是  指向int 类型常量的指针  
-	const auto j2 = i_atuo,&k2= i_atuo; // j2是int类型常量，k2是 int类型常量的常引用
+	auto  j_auto = i_atuo;//j_auto脢脟int脌脿脨脥鲁拢脕驴
+	const auto &k = i_atuo;// k脢脟  int 脌脿脨脥鲁拢脕驴碌脛脪媒脫脙  
+	auto *p = &i_atuo; // p脢脟  脰赂脧貌int 脌脿脨脥鲁拢脕驴碌脛脰赂脮毛  
+	const auto j2 = i_atuo,&k2= i_atuo; // j2脢脟int脌脿脨脥鲁拢脕驴拢卢k2脢脟 int脌脿脨脥鲁拢脕驴碌脛鲁拢脪媒脫脙
 	cout << endl;
 	const char* constchar = "";
 	char* charponiter = const_cast<char*>(constchar);
 
 
-	/*                *******                     字符串和向量以及数组                    *******                   */
+	/*                *******                     脳脰路没麓庐潞脥脧貌脕驴脪脭录掳脢媒脳茅                    *******                   */
 
 	/*
-	Titile:3.2.2节练习题
+	Titile:3.2.2陆脷脕路脧掳脤芒
 	Time:2018.4.14
 	*/
 	//string s;
@@ -105,7 +105,7 @@ int main()
 	//	}
 	//}
 	/*
-	Titile:3.3.3节练习题
+	Titile:3.3.3陆脷脕路脧掳脤芒
 	Time:2018.4.14
 	*/
 	//vector<string> strvec;
