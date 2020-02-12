@@ -32,5 +32,8 @@
     <ClCompile Include="GenericAlgorithm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Lambda.h">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
