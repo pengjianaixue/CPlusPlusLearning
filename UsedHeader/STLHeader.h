@@ -6,3 +6,8 @@
 #include <iostream>
 #include <functional>
 #include <map>
+#ifdef DLLAPI
+	#define DllSymbol __declspec(dllexport)
+#else
+	#define DllSymbol __declspec(dllimport)
+#endif // !DLLAPI

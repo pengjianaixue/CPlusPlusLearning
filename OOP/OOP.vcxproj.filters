@@ -30,6 +30,9 @@
     <ClInclude Include="BulkPrice.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ForClassMemberpointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
